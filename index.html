@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where's My Ride</title>
+	<meta charset="utf-8" description="The Best Site to Find Value on a Used Car">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" href="favicon.ico">
+	<script type="text/javascript" src='main.js'> </script>
+	<!--<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM1tuNqVLi0iiNW9a56xi83gnUDSNjM3c&callback=initMap">
+    </script>
+   	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>-->
+</head>
+<body>
+
+
+<!-- Starting page with fields to enter car search parameters -->
+
+	<div name='firstPage'>
+
+		<h1>Where's My Ride</h1>
+		<form name='userSearch' class='js-startSearch'>
+			<fieldset>
+				<label for="make">Make</label>
+				<input type="text" name='carSearch' id="make" class='js-make' placeholder='Subaru' required>
+				<label for='model'>Model</label>
+				<input type="text" name='carSearch' id="model" class='js-model' placeholder='Impreza'>
+				<label for='year'>Year</label>
+				<input type="text" name='carSearch' id="year" class='js-year' placeholder='2014'>
+				<label for='maxprice'>Max Price</label>
+				<input type="text" name='carSearch' id="maxprice" class='js-maxprice' placeholder="$15,000">
+			</fieldset>
+			<fieldset>
+				<label for='zipcode'>Location (Zipcode)</label>
+				<input type="text" name="zipcode" class='js-zipcode' placeholder="90210">
+			</fieldset>
+			<button type='submit'>Find My Car!</button>
+		</form>
+
+	</div>
+
+<!-- Second page with map showing returned car information -->
+
+	<div name='secondPage' id='map' class='hidden'>
+			
+	</div>
+
+<!-- Final page with value information for up to five chosen cars -->
+
+	<div name='thirdPage' class='hidden'>
+		<div>
+			Car 1
+		</div>
+		
+		<div>
+			Car 2
+		</div>
+
+		<div>
+			Car 3
+		</div>
+
+		<div>
+			Car 4
+		</div>
+
+		<div>
+			Car 5
+		</div>
+	</div>
+
+</body>
+</html>
